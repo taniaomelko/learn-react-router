@@ -27,7 +27,9 @@ const router =
         <Route path="edit" element={ <EditProfileForm/> } />
       </Route>
     </Route>
-  )
+  ), {
+    basename: process.env.PUBLIC_URL
+  }
   );
 
 function App() {
